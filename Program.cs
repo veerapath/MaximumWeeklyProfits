@@ -12,7 +12,7 @@ namespace ConsoleApplication
             Dictionary<DateTime, decimal> goldSpot = new Dictionary<DateTime, decimal>();
 
             //Load data from csv file
-            using (var reader = new StreamReader(@"C:\gold.csv"))
+            using (var reader = new StreamReader(@"../../gold.csv"))
             {
                 //Skip header
                 reader.ReadLine();

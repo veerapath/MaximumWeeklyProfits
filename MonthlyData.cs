@@ -29,8 +29,8 @@ namespace ConsoleApplication
         {
             foreach (WeeklyData wd in weekly)
             {
-                var result = wd.getMaxProfit(wd.getDataCount() - 1, 2);
-                System.Console.WriteLine("Maximum profit week {0} to {1} is {2},", wd.startDate.ToString("MM/dd/yyyy"), wd.startDate.AddDays(5).ToString("MM/dd/yyyy"), result.maximum);
+                var result = wd.getMaxProfit(wd.getDataCount() - 1, 1);
+                System.Console.Write("Maximum profit week {0} to {1} is {2},", wd.startDate.ToString("MM/dd/yyyy"), wd.startDate.AddDays(5).ToString("MM/dd/yyyy"), result.maximum);
                 result.logAllTransactions();
             }
         }

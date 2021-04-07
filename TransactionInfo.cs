@@ -17,7 +17,7 @@ namespace ConsoleApplication
         public DateTime SaleDate { get; }
         public Decimal BuyAt { get; }
         public Decimal SaleAt { get; }
-        public override string ToString() => $"buy at {BuyAt} on {BuyDate}, sale at {SaleAt}, {SaleDate}";
+        public override string ToString() => $"buy at {BuyAt} on {BuyDate.ToString("MM/dd/yyyy")}, sale at {SaleAt}, {SaleDate.ToString("MM/dd/yyyy")}";
     }
 
     class TransactionRecord
